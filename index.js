@@ -12,6 +12,6 @@ db.then (()=>{
         console.log (`servidor levantado en puerto ${PORT}`); 
     })
 })
-.catch (()=>{
+.catch ((error)=>{
     console.error ('Error starting server', error.message);
 })
