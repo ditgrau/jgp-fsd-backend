@@ -32,7 +32,10 @@ de mi docker
 - y hacer la funcion promesa con db `(.then, .catch)`
 
 5. CREACION DE MODELOS/ MIGRACIONES Y SEEDERS
-- 
+- crear un nuevo modelo > `$ npx sequelize-cli model:generate --name User --attributes name:string,surname:string,email:string`
+- modificar datos en el model si es oportuno y en la migracion
+- migrar a la base de datos `npx sequelize-cli db:migrate` (no es necesario levantar el servidor para la mmigracion)
+
 
 
 
