@@ -31,7 +31,8 @@ de mi docker
 - añadir en el index el requerimiento al archivo `./db`
 - y hacer la funcion promesa con db `(.then, .catch)`
 
-
+5. CREACION DE MODELOS/ MIGRACIONES Y SEEDERS
+- 
 
 
 
