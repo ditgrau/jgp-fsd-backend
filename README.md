@@ -18,6 +18,8 @@ Empezamos:
 
 3. PRIMER ENPOINT (en el index.js)
 - Lo he copiado del README de express, lo puedo modificar por `'/health'`
+- levanto el servidor `npm run dev`
+- Ya puedo probar en postman si funciona
 
 4. EMPEZAMOS BD 
 - docker funcionando 
@@ -39,13 +41,21 @@ de mi docker
 - HELP! `npx sequelize-cli --help`> aparecen todos los comandos de sequelize-cli
 - para ejecutar el seeder > `npx sequelize-cli db:seed:all`
 
-6. CRUD (?)
-- `app.use(express.json());` para poder interpretar lo que entra por body
+6. ENRUTAR
+- Requerir el router `const router = require('./router');` desde index 
+- registrarlo en express `app use(router);`
+- crear archivo `router.js`
+- importar y exportar router `const router = require('express').Router();` y `module.exports = router;`
+- se crearan las rutas de la url a las views del proyecto (?)
+
+- Controladores > crear carpeta `controllers`
+· `app.use(express.json());` en index, para poder interpretar lo que entra por body
+· añado la logica a los controllers 
 
 Cifrado de contraseñas: bcrypt `npm i bcrypt`
+- importar la biblioteca en el controller de la vista donde la voy a necesitar`const bcrypt = require('bcrypt');`
+- 
 
-
-7. ENRUTAR
 
 
 
