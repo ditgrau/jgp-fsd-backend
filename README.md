@@ -32,13 +32,20 @@ de mi docker
 - y hacer la funcion promesa con db `(.then, .catch)`
 
 5. CREACION DE MODELOS/ MIGRACIONES Y SEEDERS
-- crear un nuevo modelo > `$ npx sequelize-cli model:generate --name User --attributes name:string,surname:string,email:string`
+- crear un nuevo modelo > `npx sequelize-cli model:generate --name User --attributes name:string,surname:string,email:string`
 - modificar datos en el model si es oportuno y en la migracion (generada automáticamente)
 - migrar a la base de datos `npx sequelize-cli db:migrate` (no es necesario levantar el servidor para la mmigracion)
 - creamos los seeders `npx sequelize-cli seed:generate --name roleSeeder`
 - HELP! `npx sequelize-cli --help`> aparecen todos los comandos de sequelize-cli
 - para ejecutar el seeder > `npx sequelize-cli db:seed:all`
 
+6. CRUD (?)
+- `app.use(express.json());` para poder interpretar lo que entra por body
+
+Cifrado de contraseñas: bcrypt `npm i bcrypt`
+
+
+7. ENRUTAR
 
 
 
