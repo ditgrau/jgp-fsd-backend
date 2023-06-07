@@ -24,7 +24,7 @@ module.exports = {
       role_id: {
         type: Sequelize.INTEGER,
         references: {
-          model: "Roles", //referencia a la tabla de la bd, no al modelo
+          model: "Roles", //referencia al nombre en la migracion, no en el modelo
           key: "id"
         }
       },

@@ -42,8 +42,7 @@ de mi docker
 - para ejecutar el seeder > `npx sequelize-cli db:seed:all`
 
 6. ENRUTAR
-- Requerir el router `const router = require('./router');` desde index 
-- registrarlo en express `app use(router);`
+- Desde index requerir el router `const router = require('./router');` y registrarlo en express `app use(router);`
 - crear archivo `router.js`
 - importar y exportar router `const router = require('express').Router();` y `module.exports = router;`
 - se crearan las rutas de la url a las views del proyecto (?)
