@@ -3,6 +3,9 @@ const { User } = require('../models'); //desestructuracion
 const bcrypt = require('bcrypt'); //importar la biblioteca
 const authController = {}; // objeto vacio, para definir metodos relacionados con la autenticacion
 
+
+
+
 authController.register = async(req, res) => { //es una funcion flecha/asincrona porque se relaciona con la BD
     // req, res > funciones para manejar rutas y controladores (request/response)
     try {
@@ -30,7 +33,7 @@ authController.register = async(req, res) => { //es una funcion flecha/asincrona
         
     }
     catch (error) {
-        return res.send ('Something went wrong creating user' + error.message)
+        return res.send ('Something went wrong creating user ' + error.message)
     }
 
 }

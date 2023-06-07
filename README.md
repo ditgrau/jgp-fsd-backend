@@ -50,6 +50,7 @@ de mi docker
 - Controladores > crear carpeta `controllers`
 · `app.use(express.json());` en index, para poder interpretar lo que entra por body
 · añado la logica a los controllers. Se definen métodos/funciones que se encargan de manipular los datos y la lógica relacionada con un recurso. 
+· Comprobar en postman que va funcionando
 
 Cifrado de contraseñas: bcrypt `npm i bcrypt`
 - importar la biblioteca en el controller de la vista donde la voy a necesitar`const bcrypt = require('bcrypt');`
