@@ -28,7 +28,7 @@ Empezamos:
 - instalo dependencias > `npm i sequelize sequelize-cli mysql2`
 - inicio sequelize > `sequelize init` > crea las carpetas models, migrations, seeders
 - en el archivo config.json modifico las propiedades del objeto dev y añado el puerto
-de mi docker
+de mi docker (numero)
 - creo el archivo `db.js` con el codigo copiado
 - añadir en el index el requerimiento al archivo `./db`
 - y hacer la funcion promesa con db `(.then, .catch)`
@@ -42,9 +42,9 @@ de mi docker
 - para ejecutar el seeder > `npx sequelize-cli db:seed:all`
 
 6. ENRUTAR
-- Desde index requerir el router `const router = require('./router');` y registrarlo en express `app use(router);`
 - crear archivo `router.js`
 - importar y exportar router `const router = require('express').Router();` y `module.exports = router;`
+- Desde index requerir el router `const router = require('./router');` y registrarlo en express `app use(router);`
 - se crearan las rutas de la url a las views del proyecto (?)
 
 - Controladores > crear carpeta `controllers`

@@ -19,11 +19,11 @@ app.get('/', (req, res) => {
 
 
 
-db.then (()=>{
+db.then (()=>{ //si se conecta a la base de datos .then
     app.listen(PORT, ()=>{
         console.log (`servidor levantado en puerto ${PORT}`); 
     })
-})
+}) //si no, .catch (error)
 .catch ((error)=>{
     console.error ('Error starting server', error.message);
 })
