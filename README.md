@@ -55,8 +55,14 @@ de mi docker
 Cifrado de contraseñas: bcrypt `npm i bcrypt`
 - importar la biblioteca en el controller de la vista donde la voy a necesitar`const bcrypt = require('bcrypt');`
 
+Creacion de tokens: jwt `npm install jsonwebtoken`
+- importar la biblioteca en el controller de la vista donde la voy a necesitar `const jwt = require('jsonwebtoken');`
+
 - Vistas > crear carpeta `views`
 · Capa de presentación de la aplicación web.
+· Estructura de las vistas: importar router y controlador / definir rutas utilizando el router. a controller / exportar el router
+· Las vistas son extensiones del router.
+
 
 
 
